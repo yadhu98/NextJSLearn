@@ -1,0 +1,205 @@
+body {
+    background-color: rgb(42, 39, 39);
+    color: white;
+  background-color:rgb(16, 11, 47);
+
+}
+
+.common-header {
+    background: rgba( 223, 220, 220, 0.05 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 1.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.header-name {
+    padding-left: 4%;
+    font-weight: 600;
+    color: rgba(255, 215, 0);
+}
+
+.header-links {
+    padding-right: 10%;
+    width: 60%;
+    height: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-links a {
+    color: white;
+    cursor: pointer;
+    padding: 20%;
+    text-decoration: none;
+}
+
+.header-links a:hover{
+    border: 1px solid rgba(255, 215, 0);
+    border-radius: 10px;
+}
+
+
+section{ 
+    position: absolute;
+    /* top: 200px; */
+    right: 400px;
+    width: 100vw;    
+    /* width : 300px; */
+    height: 20px;
+    background-size: cover;
+    animation: animateBg 50s linear infinite;
+    /* z-index: -1; */
+}
+
+@keyframes animateBg{
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+}
+
+section span{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 4px;
+    height: 4px;
+    background: rgba(255, 215, 0);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.1),0 0 0 8px rgba(255,255,255,0.1),0 0 20px rgba(255,255,255,0.1);
+    animation: animate 3s linear infinite;
+}
+section span::before{
+    content:'';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg,rgba(255, 215, 0),transparent);
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    }
+    70%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: rotate(315deg) translateX(-1000px);
+        opacity: 0;
+    }
+}
+section span:nth-child(1){
+    top: 0;
+    right: 0;
+    left: initial;
+    animation-delay: 0s;
+    animation-duration: 1s;
+}
+section span:nth-child(2){
+    top: 0;
+    right: 80px;
+    left: initial;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+}
+section span:nth-child(3){
+    top: 80;
+    right: 0px;
+    left: initial;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+section span:nth-child(4){
+    top: 0;
+    right: 180px;
+    left: initial;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+section span:nth-child(5){
+    top: 0;
+    right: 400px;
+    left: initial;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+}
+section span:nth-child(6){
+    top: 0;
+    right: 600px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+section span:nth-child(7){
+    top: 300px;
+    right: 0px;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+}
+section span:nth-child(8){
+    top: 0px;
+    right: 700px;
+    left: initial;
+    animation-delay: 1.4s;
+    animation-duration: 1.25s;
+}
+section span:nth-child(9){
+    top: 0px;
+    right: 1000px;
+    left: initial;
+    animation-delay: 0.75s;
+    animation-duration: 2.25s;
+}
+section span:nth-child(9){
+    top: 0px;
+    right: 450px;
+    left: initial;
+    animation-delay: 2.75s;
+    animation-duration: 2.75s;
+}
+
+
+.home-body{
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex: 1 1;
+    font-weight: 500;
+    font-size: 50px;
+    opacity: 0.8;
+}
+
+.home-aboutme{
+    font-size: 0.95rem;
+    width: 60%;
+}
+
+
+
+/* @media screen and (min-width : 750px) {
+    .header-links {
+        padding-right: 10%;
+        width: 60%;
+        height: 5vh;
+        display: flex;
+        flex-direction: column;
+    }
+} */
